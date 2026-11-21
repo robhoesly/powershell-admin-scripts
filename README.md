@@ -1,19 +1,16 @@
 # powershell-admin-scripts
-Collection of Windows maintenance, update, and IT admin / MSP PowerShell scripts
+Collection of Windows maintenance, update, and IT admin / MSP PowerShell scripts and related files, reference info, etc.
+
+# HOW TO SETUP AND RUN THESE SCRIPTS
+1. Download the script you want to use
+2. Review the code (optional): Right-click the .ps1 file and select Edit (or open in Notepad) if you want to inspect everything it does before running.
+3. Open PowerShell: Press Windows Key + X, select Terminal (Admin), and click Yes on the User Account Control prompt.
+4. Manually run the script:
+5. Navigate to download folder (cd C:\Temp)
+6. Run script (.\winget_silent.ps1)
 
 # winget_silent.ps1
 This updates your third-party apps (using WinGet), Microsoft Store apps, Office/Microsoft 365, and Windows OS patches in one pass, and saves a log file (winget_silent.log) in the same folder.
-
-# HOW TO SET IT UP & RUN IT
-Extract the file: Unzip the attachment to a simple folder like C:\Temp.
-Rename the extension: Rename winget_silent.txt to winget_silent.ps1. (Tip: Make sure "File name extensions" is checked under the View tab in File Explorer so it doesn't end up named winget_silent.ps1.txt).
-Review the code (optional): Right-click the .ps1 file and select Edit (or open in Notepad) if you want to inspect everything it does before running.
-Open PowerShell: Press Windows Key + X, select Terminal (Admin), and click Yes on the User Account Control prompt.
-
-Run the script:
-cd C:\Temp
-.\winget_silent.ps1
-(Note: If updates require a restart, the script gives a 30-second countdown at the end. Press Ctrl + C to cancel the automatic reboot.)
 
 # OPTIONAL: CREATE A ONE-CLICK DESKTOP SHORTCUT
 Once you've verified it runs cleanly, you can make a shortcut to run it anytime without opening Terminal manually:
