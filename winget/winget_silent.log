@@ -1,0 +1,77 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261120223725
+Username: Rob-Laptop\Rob
+RunAs User: Rob-Laptop\Rob
+Configuration Name: 
+Machine: ROB-LAPTOP (Microsoft Windows NT 10.0.26300.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File C:\Users\Rob\OneDrive - IT Central, LC\MSP_Tools\Winget\winget_silent.ps1
+Process ID: 7072
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Rob\OneDrive - IT Central, LC\MSP_Tools\Winget\winget_silent.log
+Logging session output to: C:\Users\Rob\OneDrive - IT Central, LC\MSP_Tools\Winget\winget_silent.log
+Configuring Script Environment...
+Checking execution policies...
+
+PS>TerminatingError(Set-ExecutionPolicy): "Windows PowerShell updated your execution policy successfully, but the setting is overridden by a policy defined at a more specific scope.  Due to the override, your shell will retain its current effective execution policy of Bypass. Type "Get-ExecutionPolicy -List" to view your execution policy settings. For more information please see "Get-Help Set-ExecutionPolicy"."
+Execution policy is currently managed by process/machine scope (Bypass). Continuing...
+Verifying Windows Package Manager (WinGet)...
+WinGet Framework detected. Version: v1.30.310
+Resetting and updating WinGet sources...
+Resetting all sources...Done
+Updating all sources...
+Updating source: msstore...
+Done
+Updating source: winget...
+Done
+Updating source: winget-font...
+Done
+Enforcing system regional baseline (en-US)...
+
+Step 1/7: Checking for all WinGet community package updates...
+No installed package found matching input criteria.
+
+Step 2/7: Checking for Microsoft Store package updates...
+The `msstore` source requires that you view the following agreements before using.
+Terms of Transaction: https://aka.ms/microsoft-store-terms-of-transaction
+The source requires the current machine's 2-letter geographic region to be sent to the backend service to function prope
+rly (ex. "US").
+
+No installed package found matching input criteria.
+Triggering native Microsoft Store background update scan...
+Native Microsoft Store scan triggered successfully.
+
+Step 3/7: Checking for Microsoft 365 / Office Click-to-Run updates...
+Office Click-to-Run client found. Triggering silent update check...
+Office update check completed.
+
+Step 4/7: Enforcing device installations and driver restrictions...
+Driver searching and manufacturer companion metadata blocked.
+
+Step 5/7: Hardening Feature Update Policy (Allowing Windows 11 26H2)...
+Target Release Baseline successfully locked to Windows 11 26H2.
+
+Step 6/7: Triggering Windows Operating System, Cumulative & Security updates...
+Importing PSWindowsUpdate and scanning Microsoft Update servers...
+VERBOSE: ROB-LAPTOP (11/20/2026 10:38:07 PM): Connecting to Microsoft Update server. Please wait...
+VERBOSE: Found [1] Updates in pre search criteria
+VERBOSE: Found [0] Updates in post search criteria
+VERBOSE: Accepted [0] Updates ready to Download
+VERBOSE: Downloaded [0] Updates ready to Install
+VERBOSE: Installed [0] Updates
+
+Step 7/7: Evaluating system reboot criteria...
+No reboot required by newly installed updates. Finalizing process.
+Script finished and updates complete. Closing in 10 seconds...
+**********************
+Windows PowerShell transcript end
+End time: 20261120223833
+**********************
