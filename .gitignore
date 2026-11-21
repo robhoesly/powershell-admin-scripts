@@ -1,0 +1,13 @@
+# Script output & transcript logs
+*.log
+*_log.txt
+
+# Local test exports & temporary files
+*.csv
+*.tmp
+*.bak
+
+# Windows OS & editor junk
+Thumbs.db
+desktop.ini
+.vscode/
