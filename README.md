@@ -24,15 +24,16 @@ Once you've verified the script runs cleanly, you can make a shortcut to run it 
 
 
 # QUICK TROUBLESHOOTING (IF WINDOWS BLOCKS THE SCRIPT)
-**Q1** Script not digitally signed or came from another computer.
-**A1.** Windows tags downloaded files with a *Zone.Identifier stream.* Try running these commands in your download directory (C:\Temp) to check and unblock it:
-`Get-Item * -Stream "Zone.Identifier"`
-`Unblock-File .\winget_silent.ps1`
-`(Alternatively, just copy/paste the text into a new Notepad file on your PC and save it appropriately (example: winget_silent.ps1.)`
+1. Script not digitally signed or came from another computer.
+    Windows tags downloaded files with a *Zone.Identifier stream.* Try running these commands in your download directory (C:\Temp) to check and unblock it:
+    `Get-Item * -Stream "Zone.Identifier"`
+    `Unblock-File .\winget_silent.ps1`
+    **Alternatively, simply copy/paste the text into a new Notepad file on your PC and save it appropriately (example: winget_silent.ps1)**
 
-**Q2** The script still doesn't run manually in PowerShell.
-**A2** Check your Execution Policy by running this command:
-**Get-ExecutionPolicy -List**
-Usually CurrentUser or LocalMachine should be set to **RemoteSigned**
-If they are **Undefined** or **Restricted,** run this command and try the script again:
-`Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force`
+2. The script still doesn't run manually in PowerShell.
+    Check your Execution Policies by running this command:
+    `Get-ExecutionPolicy -List`
+    
+    Usually CurrentUser or LocalMachine should be set to **RemoteSigned**
+    If you have **Undefined** or **Restricted** run this command and test the script again:
+    `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force`
